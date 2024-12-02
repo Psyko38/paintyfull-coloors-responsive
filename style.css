@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+	font-family: Inter;
+}
+
+.p1 > .box-p1 > h1 {
+	color: #369eff;
+	font-size: 3rem;
+	padding-bottom: 15px;
+}
+
+.p1 > .box-p1 > h2 {
+	font-weight: 900;
+	padding-bottom: 5px;
+}
+
+.p1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.p1 > img {
+	width: 285px;
+	height: 178px;
+}
+
+.box {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	width: 100%;
+}
+
+.box-p1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.Color1,
+.Color2,
+.Color3,
+.Color4,
+.Color5 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100vh;
+	width: 100%;
+	padding: 0;
+}
+
+.Color1 {
+	background-color: #fbdf93;
+}
+
+.Color2 {
+	background-color: #d3fb93;
+}
+
+.Color3 {
+	background-color: #e193fb;
+}
+
+.Color4 {
+	background-color: #93f0fb;
+}
+
+.Color5 {
+	background-color: #f7fb93;
+}
+
+@media screen and (min-width: 720px) {
+	.box {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.p1 {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-right: 15%;
+		margin-left: 15%;
+	}
+
+	.p1 > .box-p1 > h1 {
+		font-size: 3.4rem;
+	}
+}
+
+@media screen and (min-width: 920px) {
+	.class {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.box {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+}
